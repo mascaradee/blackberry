@@ -1,10 +1,17 @@
 import React from "react";
 import axios from "axios";
 import Movie from "./Movie";
+import "./App.css";
 
 /**
  * axios = fetch 역할
  * async-await 특정 역할이 끝날때까지 기다려라
+ *
+ * TIP
+ * className 필수인 버전인거 같음
+ * map 내 화살표 함수 사용 시 return문 꼭 필요
+ * style component 수업 듣기
+ * style ={{}}  더블로 적용해야 함.
  */
 class App extends React.Component {
   state = {
@@ -34,10 +41,14 @@ class App extends React.Component {
   render() {
     const { isLoading, movies } = this.state; // ES6  문법 / state 변수명 스펠링 유의할것
     return (
-      <div>
-        {isLoading
-          ? "Loading"
-          : movies.map((movie) => {
+      <section className="container">
+        {isLoading ? (
+          <div className="loader">
+            <span className="loader__text">Loading... </span>
+          </div>
+        ) : (
+          <div className="movies">
+            {movies.map((movie) => {
               return (
                 <Movie
                   key={movie.id}
@@ -46,10 +57,13 @@ class App extends React.Component {
                   title={movie.title}
                   summary={movie.summary}
                   poster={movie.medium_cover_image}
+                  genres={movie.genres}
                 />
               );
             })}
-      </div>
+          </div>
+        )}
+      </section>
     );
   }
   /**
