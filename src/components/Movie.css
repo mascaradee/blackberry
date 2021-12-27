@@ -7,7 +7,7 @@
   margin-bottom: 70px;
   display: flex;
   align-items: flex-start;
-  /* justify-content: space-between; */
+  /* justify-content: space-between;  movie 하나가 이상해서 주석처리함*/
   font-weight: 300;
   padding: 20px;
   border-radius: 5px;
