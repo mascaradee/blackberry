@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/blackberry/static/css/main.20a50589.css",
-    "main.js": "/blackberry/static/js/main.f417745c.js",
+    "main.css": "/blackberry/static/css/main.df09a309.css",
+    "main.js": "/blackberry/static/js/main.46f8e33b.js",
     "index.html": "/blackberry/index.html",
-    "main.20a50589.css.map": "/blackberry/static/css/main.20a50589.css.map",
-    "main.f417745c.js.map": "/blackberry/static/js/main.f417745c.js.map"
+    "main.df09a309.css.map": "/blackberry/static/css/main.df09a309.css.map",
+    "main.46f8e33b.js.map": "/blackberry/static/js/main.46f8e33b.js.map"
   },
   "entrypoints": [
-    "static/css/main.20a50589.css",
-    "static/js/main.f417745c.js"
+    "static/css/main.df09a309.css",
+    "static/js/main.46f8e33b.js"
   ]
 }
